@@ -48,6 +48,7 @@ class FormTemplateField(models.Model):
     """
     fields for template
     """
+    label = models.CharField(max_length=60)
     template = models.ForeignKey(FormTemplate, related_name="fields", on_delete=models.CASCADE)
     type = models.CharField(choices=TYPE_CHOICES, max_length=10)
     meta = JSONField(null=True, blank=True)
@@ -65,6 +66,23 @@ class RiskType(models.Model):
 
     def __str__(self):
         return "%s" % self.name
+
+    @classmethod
+    def create_from_template(cls, template, name=None):
+        """
+        :param template: FormTemplate Instance
+        :param name: optional, if not provided then template instance's name would be used
+        :return:
+        """
+        if name is None:
+            name = template.name
+        risk_type_instance = cls.objects.create(template=template, name=name)
+        risk_type_fields_instances = []
+        for field in template.fields.all():
+            risk_type_fields_instances.append(
+                RiskTypeField(risk_type=risk_type_instance, label=field.label, type=field.type, meta=field.meta))
+        RiskTypeField.objects.bulk_create(risk_type_fields_instances)
+        return risk_type_instance
 
 
 class RiskTypeField(models.Model):

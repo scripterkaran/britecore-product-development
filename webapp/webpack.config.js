@@ -102,7 +102,10 @@ module.exports = {
     historyApiFallback: true,
     noInfo: true,
     overlay: true,
-    disableHostCheck: true
+    disableHostCheck: true,
+    proxy: {
+      "/api": "http://localhost:8000"
+    }
   },
   performance: {
     hints: false
