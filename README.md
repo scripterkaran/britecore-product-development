@@ -2,6 +2,8 @@ Problem
 -------
 **Dynamic Fields using Relation Database**
 
+Problem Statement: https://github.com/IntuitiveWebSolutions/ProductDevelopmentProject
+
 Project live URL  http://britecore-product.us-east-1.elasticbeanstalk.com/
 
 
@@ -45,6 +47,7 @@ Although JSON approach seems simple and easy to implement, It has concerning pro
  
 
 Tech Stack:
+-----------
 
  - Python with Django Framework
  - Relational Database 
@@ -54,7 +57,7 @@ Tech Stack:
  - VCS: Git
 
 
-For adding new fields and `RiskType` and `RiskTypeField` the functionality is inbuilt by lovely django's admin interface.
+Note: For adding new fields and `RiskType` and `RiskTypeField` the functionality is inbuilt by lovely django's admin interface.
 Contact me for admin user and password.
 
 
