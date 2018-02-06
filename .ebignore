@@ -5,6 +5,8 @@
 venv/
 webapp/node_modules
 webapp/src
+webapp/dist
+.git/
 *.pyc
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
