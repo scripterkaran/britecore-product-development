@@ -12,7 +12,8 @@ Project:
 This sample application uses a relational database and allows dynamic fields in forms. Form creator can add as many fields as they want to a specific risk type.
 
 As a Form Creator, he/she can use `FormTemplates` that are predefined by britecore team, moderators etc. These templates have fields(`FormTemplateField`) defined which can be used by form creator. 
-Flow would go like this:  If form creator uses "use a template" , a new `RiskType` would be created, and new RiskTypeField would be created/copied from `FormTemplateFields`.
+
+Flow would go like this:  If form creator uses "use a template" , a new `RiskType` would be created, and new `RiskTypeField` would be created/copied from `FormTemplateField`.
 Now on this `RiskType` the form Creator can edit, delete and also add new fields. 
 
 DB Design: 
