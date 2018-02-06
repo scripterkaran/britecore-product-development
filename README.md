@@ -38,8 +38,8 @@ Reasons to not store fields as a JSON
 One of the solutions I thought included storing all the fields into one JSON field.
 Although JSON approach seems simple and easy to implement, It has concerning problems.
 
- - Saving Response from user :
- Since we have no ID specific to a field we will be not be able to map  responses of users, properly. That said, it is still possible but will be a development overhead. 
+ - Saving Response from user 
+ Since we have no ID specific to a field we will not be able to map responses of users, properly. That said, it is still possible but will be a development overhead. 
  - Updating a specific field will require a full JSON update.
  If the form is huge then a simple update will also cause memory overhead, since you would have to load the entire obj in memory.
  
@@ -54,7 +54,8 @@ Tech Stack:
  - VCS: Git
 
 
-
+For adding new fields and `RiskType` and `RiskTypeField` the functionality is inbuilt by lovely django's admin interface.
+Contact me for admin user and password.
 
 
 
