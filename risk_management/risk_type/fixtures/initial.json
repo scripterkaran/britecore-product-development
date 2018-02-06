@@ -1,0 +1,108 @@
+[
+  {
+    "model": "risk_type.risktype",
+    "pk": 1,
+    "fields": {
+      "name": "Damage Report",
+      "template": null
+    }
+  },
+  {
+    "model": "risk_type.risktype",
+    "pk": 2,
+    "fields": {
+      "name": "Financial",
+      "template": null
+    }
+  },
+  {
+    "model": "risk_type.risktypefield",
+    "pk": 1,
+    "fields": {
+      "label": "Date of Report",
+      "risk_type": 1,
+      "type": "date",
+      "meta": null
+    }
+  },
+  {
+    "model": "risk_type.risktypefield",
+    "pk": 2,
+    "fields": {
+      "label": "Description",
+      "risk_type": 1,
+      "type": "text",
+      "meta": null
+    }
+  },
+  {
+    "model": "risk_type.risktypefield",
+    "pk": 3,
+    "fields": {
+      "label": "Damage Type",
+      "risk_type": 1,
+      "type": "enum",
+      "meta": "{\"options\":[\"Fire\",\"Water\",\"Electrical\",\"Other\"]}"
+    }
+  },
+  {
+    "model": "risk_type.risktypefield",
+    "pk": 4,
+    "fields": {
+      "label": "Estimated Cost of Damage",
+      "risk_type": 1,
+      "type": "number",
+      "meta": null
+    }
+  },
+  {
+    "model": "risk_type.risktypefield",
+    "pk": 5,
+    "fields": {
+      "label": "Cover Amount",
+      "risk_type": 2,
+      "type": "number",
+      "meta": null
+    }
+  },
+  {
+    "model": "risk_type.risktypefield",
+    "pk": 6,
+    "fields": {
+      "label": "Date of Insurance",
+      "risk_type": 2,
+      "type": "text",
+      "meta": null
+    }
+  },
+  {
+    "model": "risk_type.risktypefield",
+    "pk": 7,
+    "fields": {
+      "label": "Can be extended?",
+      "risk_type": 2,
+      "type": "enum",
+      "meta": "{\"options\":[\"Yes\",\"No\"]}"
+    }
+  },
+  {
+    "model": "risk_type.risktypefield",
+    "pk": 8,
+    "fields": {
+      "label": "Loss Amount, if any",
+      "risk_type": 2,
+      "type": "number",
+      "meta": null
+    }
+  },
+  {
+    "model": "risk_type.risktypefield",
+    "pk": 9,
+    "fields": {
+      "label": "Footer Notes",
+      "risk_type": 2,
+      "type": "text",
+      "meta": null
+    }
+  }
+]

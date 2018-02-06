@@ -1,0 +1,5 @@
+Django==2.0.2
+django-extensions==1.9.9
+djangorestframework==3.7.7
+django-storages==1.6.5
+boto3==1.5.22

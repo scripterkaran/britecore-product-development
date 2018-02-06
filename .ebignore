@@ -1,0 +1,12 @@
+
+# IntelliJ project files
+.idea/
+*.iml
+venv/
+webapp/node_modules
+webapp/src
+*.pyc
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
